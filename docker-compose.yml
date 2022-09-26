@@ -48,6 +48,26 @@ services:
     volumes:
       - db_home:/var/lib/postgresql/data
 
+  mysql:
+    env_file: docker/.env
+    image: mysql:latest
+    container_name: mysql_db
+    # command: ["/app/docker/docker-mysql.sh"]
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:33060:3306"
+    volumes: *superset-volumes
+
+    # volumes:
+    #   - db_mysql:/var/lib/mysql/data
+    
+  # phpmyadmin:
+  #   image: phpmyadmin/phpmyadmin:latest
+  #   container_name: phpmyadmin
+  #   restart: unless-stopped
+  #   ports:
+  #     - "127.0.0.1:8081:8081"
+  
   superset:
     env_file: docker/.env
     image: *superset-image
@@ -152,6 +172,8 @@ volumes:
   superset_home:
     external: false
   db_home:
+    external: false
+  db_mysql:
     external: false
   redis:
     external: false
