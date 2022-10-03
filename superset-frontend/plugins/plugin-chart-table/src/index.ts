@@ -67,3 +67,5 @@ export default class TableChartPlugin extends ChartPlugin<
     });
   }
 }
+
+export { default as TableCheckbox } from './TableCheckbox';
