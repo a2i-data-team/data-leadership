@@ -1,0 +1,7 @@
+structure/content:
+  ERRORS: 
+    GENERIC_BACKEND_ERROR: "We were unable to connect to your database. Please contact support for assistance." 
+  DB_IMAGES: 
+    postgresql: "superset-frontend/src/assets/images/postgresql.png" 
+    bigquery: "superset-frontend/src/assets/images/postgresql.png" 
+    snowflake: "superset-frontend/src/assets/images/snowflake.png"
