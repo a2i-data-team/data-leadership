@@ -34,7 +34,7 @@ import SankeyChartPlugin from '@superset-ui/legacy-plugin-chart-sankey';
 import SunburstChartPlugin from '@superset-ui/legacy-plugin-chart-sunburst';
 import TableChartPlugin from '@superset-ui/plugin-chart-table';
 import TableCheckboxPlugin from '@superset-ui/plugin-chart-table/TableCheckbox';
-// import TableCheckboxV1Plugin from '@superset-ui/superset-plugin-chart-table-checkbox';
+import { SupersetPluginChartTableTick } from 'superset-plugin-chart-table-tick';
 import TreemapChartPlugin from '@superset-ui/legacy-plugin-chart-treemap';
 import { WordCloudChartPlugin } from '@superset-ui/plugin-chart-word-cloud';
 import WorldMapChartPlugin from '@superset-ui/legacy-plugin-chart-world-map';
@@ -91,7 +91,7 @@ export default class MainPreset extends Preset {
     )
       ? [new GroupByFilterPlugin().configure({ key: 'filter_groupby' })]
       : [];
-
+      
     super({
       name: 'Legacy charts',
       presets: [new DeckGLChartPreset()],
@@ -136,7 +136,7 @@ export default class MainPreset extends Preset {
         new SunburstChartPlugin().configure({ key: 'sunburst' }),
         new TableChartPlugin().configure({ key: 'table' }),
         new TableCheckboxPlugin().configure({ key: 'table_checkbox' }),
-        // new TableCheckboxV1Plugin().configure({ key: 'table_checkbox_v1' }),
+        new SupersetPluginChartTableTick().configure({ key: 'table_tick' }),
         new TimePivotChartPlugin().configure({ key: 'time_pivot' }),
         new TimeTableChartPlugin().configure({ key: 'time_table' }),
         new TreemapChartPlugin().configure({ key: 'treemap' }),
