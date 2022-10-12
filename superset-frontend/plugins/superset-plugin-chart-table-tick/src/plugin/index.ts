@@ -21,6 +21,7 @@ import buildQuery from './buildQuery';
 import controlPanel from './controlPanel';
 import transformProps from './transformProps';
 import thumbnail from '../images/thumbnail.png';
+import example1 from '../images/table1.png';
 
 export default class SupersetPluginChartTableTick extends ChartPlugin {
   /**
@@ -38,7 +39,10 @@ export default class SupersetPluginChartTableTick extends ChartPlugin {
       behaviors: [Behavior.INTERACTIVE_CHART],
       category: t('Table'),
       canBeAnnotationTypes: ['EVENT', 'INTERVAL'],
-      description: 'Superset Plugin Chart Table Tick',
+      description: t(
+        'Classic row-by-column spreadsheet like view of a dataset with tick and cross icon. Use tables to showcase a view into the underlying data or to show aggregated metrics.',
+      ),
+      exampleGallery: [{ url: example1 }],
       name: t('Table Tick'),
       tags: [
         t('Additive'),
@@ -57,7 +61,7 @@ export default class SupersetPluginChartTableTick extends ChartPlugin {
     super({
       buildQuery,
       controlPanel,
-      loadChart: () => import('../SupersetPluginChartTableTick'),
+      loadChart: () => import('./TableTick'),
       metadata,
       transformProps,
     });

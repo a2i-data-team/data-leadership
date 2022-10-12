@@ -73,6 +73,8 @@ export type TableCheckboxFormData = QueryFormData & {
   time_grain_sqla?: TimeGranularity;
   column_config?: Record<string, ColumnConfig>;
   allow_rearrange_columns?: boolean;
+  tick_text?: string;
+  use_tick?: boolean;
 };
 
 export interface TableCheckboxProps extends ChartProps {
@@ -112,6 +114,8 @@ export interface TableCheckboxTransformedProps<D extends DataRecord = DataRecord
   onChangeFilter?: ChartProps['hooks']['onAddFilter'];
   columnColorFormatters?: ColorFormatters;
   allowRearrangeColumns?: boolean;
+  tickText?: string;
+  useTick?: boolean;
   onContextMenu?: (
     filters: QueryObjectFilterClause[],
     clientX: number,
