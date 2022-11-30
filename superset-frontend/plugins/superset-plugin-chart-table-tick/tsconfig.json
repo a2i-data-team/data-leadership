@@ -31,7 +31,8 @@
     "types": ["jest"],
     "typeRoots": [
       "./node_modules/@types"
-    ]
+    ],
+    "noImplicitAny": false
   },
   "exclude": [
     "lib",

@@ -17,6 +17,8 @@
  * under the License.
  */
 module.exports = {
+  endOfLine: 'auto',
+  bracketSpacing: true,
   singleQuote: true,
   trailingComma: 'all',
   arrowParens: 'avoid',
