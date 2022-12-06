@@ -97,7 +97,7 @@ function DashboardTable({
   const [loaded, setLoaded] = useState<boolean>(false);
 
   const getFilters = (filterName: string) => {
-    const filters = [];
+    const filters: any[] = [];
     if (filterName === 'Mine') {
       filters.push({
         id: 'owners',
@@ -231,8 +231,8 @@ function DashboardTable({
               const target =
                 dashboardFilter === 'Favorite'
                   ? `/dashboard/list/?filters=(favorite:(label:${t(
-                      'Yes',
-                    )},value:!t))`
+                    'Yes',
+                  )},value:!t))`
                   : '/dashboard/list/';
               history.push(target);
             },

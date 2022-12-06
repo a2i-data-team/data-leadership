@@ -194,7 +194,7 @@ export default function DrillDetailPane({
     resultsPages,
   ]);
 
-  let tableContent = null;
+  let tableContent: any = null;
   if (responseError) {
     //  Render error if page download failed
     tableContent = (
@@ -259,9 +259,8 @@ export default function DrillDetailPane({
       } = result;
       const notAvailable = t('Not available');
       const createdBy =
-        `${created_by?.first_name ?? ''} ${
-          created_by?.last_name ?? ''
-        }`.trim() || notAvailable;
+        `${created_by?.first_name ?? ''} ${created_by?.last_name ?? ''
+          }`.trim() || notAvailable;
       const modifiedBy = changed_by
         ? `${changed_by.first_name} ${changed_by.last_name}`
         : notAvailable;

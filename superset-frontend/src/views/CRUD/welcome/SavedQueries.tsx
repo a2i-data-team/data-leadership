@@ -179,7 +179,7 @@ const SavedQueries = ({
   };
 
   const getFilters = (filterName: string) => {
-    const filters = [];
+    const filters:any[] = [];
     if (filterName === 'Mine') {
       filters.push({
         id: 'created_by',

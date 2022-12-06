@@ -87,6 +87,7 @@ module.exports = {
       ],
       plugins: ['@typescript-eslint/eslint-plugin', 'prettier', 'react'],
       rules: {
+        eqeqeq: 'off',
         '@typescript-eslint/ban-ts-ignore': 0,
         '@typescript-eslint/ban-ts-comment': 0, // disabled temporarily
         '@typescript-eslint/ban-types': 0, // disabled temporarily
@@ -146,6 +147,7 @@ module.exports = {
         'react/static-property-placement': 0, // re-enable up for discussion
         // 'prettier/prettier': 'error',
         'file-progress/activate': 1,
+        'import/no-duplicates': ["error", { "considerQueryString": true }],
       },
       settings: {
         'import/resolver': {
@@ -182,12 +184,14 @@ module.exports = {
         'plugin:testing-library/react',
       ],
       rules: {
+        eqeqeq: 'off',
         'import/no-extraneous-dependencies': [
           'error',
           { devDependencies: true },
         ],
         'no-only-tests/no-only-tests': 'error',
         'max-classes-per-file': 0,
+        'import/no-duplicates': ["error", { "considerQueryString": true }],
       },
     },
     {
@@ -204,13 +208,16 @@ module.exports = {
         'packages/superset-ui-core/src/style/index.tsx',
       ],
       rules: {
+        eqeqeq: 'off',
         'theme-colors/no-literal-colors': 0,
         'translation-vars/no-template-vars': 0,
         'no-restricted-imports': 0,
+        'import/no-duplicates': ["error", { "considerQueryString": true }],
       },
     },
   ],
   rules: {
+    eqeqeq: 'off',
     'theme-colors/no-literal-colors': 'error',
     'translation-vars/no-template-vars': ['error', true],
     camelcase: [
@@ -287,6 +294,11 @@ module.exports = {
     'react/sort-comp': 0, // TODO: re-enable in separate PR
     'react/static-property-placement': 0, // disabled temporarily
     // 'prettier/prettier': 'error',
+    'import/no-duplicates': ["error", { "considerQueryString": true }],
+    "prefer-const": ["error", {
+      "destructuring": "any",
+      "ignoreReadBeforeAssign": false
+    }]
   },
   ignorePatterns,
 };

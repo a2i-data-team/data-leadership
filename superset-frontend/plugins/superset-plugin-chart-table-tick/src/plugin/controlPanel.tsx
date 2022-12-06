@@ -29,7 +29,6 @@ import {
   QueryMode,
   smartDateFormatter,
   t,
-  validateNonEmpty,
 } from '@superset-ui/core';
 
 import {
@@ -49,10 +48,11 @@ import {
   ColumnMeta,
   defineSavedMetrics,
   getStandardizedControls,
-  ControlFormItemSpec
+  ControlFormItemSpec,
+  DEFAULT_CONFIG_FORM_LAYOUT
 } from '@superset-ui/chart-controls';
 
-import { DEFAULT_CONFIG_FORM_LAYOUT } from '@superset-ui/chart-controls/shared-controls/components/ColumnConfigControl/constants';
+// import { DEFAULT_CONFIG_FORM_LAYOUT } from '@superset-ui/chart-controls/shared-controls/components/ColumnConfigControl/constants';
 
 import { PAGE_SIZE_OPTIONS } from '../consts';
 
@@ -149,37 +149,6 @@ const percentMetricsControl: typeof sharedControls.metrics = {
   validators: [],
 };
 
-const tickOptionTest = {
-  label: t('Tick Option'),
-  expanded: true,
-  controlSetRows: [
-    [
-      {
-        name: 'tick_text',
-        config: {
-          type: 'TextControl',
-          default: 'yes',
-          renderTrigger: true,
-          // ^ this makes it apply instantaneously, without triggering a "run query" button
-          label: t('Tick Text'),
-          description: t('The text you want to see as tick mark in the table'),
-        },
-      },
-    ],
-    [
-      {
-        name: 'use_tick',
-        config: {
-          type: 'CheckboxControl',
-          label: t('Use Tick Icon'),
-          renderTrigger: true,
-          default: true,
-          description: t('A checkbox to enable Tick Icon'),
-        },
-      },
-    ],
-  ],
-}
 
 const tickBoxColumnConfigs: { name: string; config: ControlFormItemSpec }[] = [
   {
@@ -216,7 +185,7 @@ const tickBoxColumnConfigs: { name: string; config: ControlFormItemSpec }[] = [
 
 
 const tickBoxColumnValue = () => {
-  let menus = DEFAULT_CONFIG_FORM_LAYOUT
+  const menus = DEFAULT_CONFIG_FORM_LAYOUT
   const stringconfgis = [...menus[GenericDataType.STRING], tickBoxColumnConfigs]
   menus[GenericDataType.STRING] = stringconfgis
   // console.log("menus", menus)

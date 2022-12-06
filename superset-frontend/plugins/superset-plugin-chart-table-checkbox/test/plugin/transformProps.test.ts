@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-import { ChartProps } from '@superset-ui/core';
+import { ChartProps, supersetTheme } from '@superset-ui/core';
 import transformProps from '../../src/plugin/transformProps';
 
 describe('SupersetPluginChartTableCheckbox transformProps', () => {
@@ -37,6 +37,7 @@ describe('SupersetPluginChartTableCheckbox transformProps', () => {
     queriesData: [{
       data: [{ name: 'Hulk', sum__num: 1 }],
     }],
+    theme: supersetTheme
   });
 
   it('should transform chart props for viz', () => {

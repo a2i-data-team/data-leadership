@@ -107,7 +107,7 @@ function ChartTable({
   const [loaded, setLoaded] = useState<boolean>(false);
 
   const getFilters = (filterName: string) => {
-    const filters = [];
+    const filters:any[] = [];
 
     if (filterName === 'Mine') {
       filters.push({

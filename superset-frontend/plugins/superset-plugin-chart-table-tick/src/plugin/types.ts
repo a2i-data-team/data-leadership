@@ -75,7 +75,16 @@ export type TableCheckboxFormData = QueryFormData & {
   allow_rearrange_columns?: boolean;
   tick_text?: string;
   use_tick?: boolean;
-};
+}
+
+export interface TableChartProps extends ChartProps {
+  ownCurrentState?: {
+    pageSize?: number;
+    currentPage?: number;
+  };
+  rawFormData: TableCheckboxFormData;
+  queriesData: ChartDataResponseResult[];
+}
 
 export interface TableCheckboxProps extends ChartProps {
   ownCurrentState?: {

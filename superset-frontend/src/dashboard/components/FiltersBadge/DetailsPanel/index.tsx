@@ -76,7 +76,7 @@ const DetailsPanelPopover = ({
   }, [activeTabs]);
 
   const getDefaultActivePanel = () => {
-    const result = [];
+    const result: any[] = [];
     if (appliedCrossFilterIndicators.length) {
       result.push('appliedCrossFilters');
     }

@@ -61,7 +61,7 @@ export default class TextControl<
   onChange = (inputValue: string) => {
     let parsedValue: InputValueType = inputValue;
     // Validation & casting
-    const errors = [];
+    const errors:any[] = [];
     if (inputValue !== '' && this.props.isFloat) {
       const error = legacyValidateNumber(inputValue);
       if (error) {

@@ -362,7 +362,7 @@ export default class CRUDCollection extends React.PureComponent<
     /* eslint-disable no-underscore-dangle */
     const isExpanded =
       !!this.state.expandedColumns[record.id] || record.__expanded;
-    let tds = [];
+    let tds: any[] = [];
     if (expandFieldset) {
       tds.push(
         <td key="__expand" className="expand">
@@ -370,9 +370,8 @@ export default class CRUDCollection extends React.PureComponent<
             role="button"
             aria-label="Toggle expand"
             tabIndex={0}
-            className={`fa fa-caret-${
-              isExpanded ? 'down' : 'right'
-            } text-primary pointer`}
+            className={`fa fa-caret-${isExpanded ? 'down' : 'right'
+              } text-primary pointer`}
             onClick={this.toggleExpand.bind(this, record.id)}
           />
         </td>,

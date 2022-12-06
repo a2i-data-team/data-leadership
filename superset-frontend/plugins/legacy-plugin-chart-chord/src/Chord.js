@@ -49,7 +49,7 @@ function Chord(element, props) {
   const outerRadius = Math.min(width, height) / 2 - 10;
   const innerRadius = outerRadius - 24;
 
-  let chord;
+  let chord = null;
 
   const arc = d3.svg.arc().innerRadius(innerRadius).outerRadius(outerRadius);
 

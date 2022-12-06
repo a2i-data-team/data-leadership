@@ -106,11 +106,11 @@ function cellBar({
   );
 }
 
-function TickIcon(value: number | string, tickValue: number | string, iconHeight?: string | number | undefined) {
+function TickIcon(value: number | string, tickValue: number | string | null | undefined | boolean | any, iconHeight?: string | number | undefined | any) {
   const StyledDiv = styled.div`padding: 5px;`;
   return (
     <StyledDiv className='tick_icon'>
-      <img src={value == tickValue ? tickIcon : crossIcon} height={iconHeight ?? 20} />
+      <img src={value == tickValue ? tickIcon : crossIcon} height={iconHeight ?? 20} alt="" />
     </StyledDiv>
   )
 }
@@ -201,8 +201,6 @@ export default function TableTick<D extends DataRecord = DataRecord>(
     sticky = true, // whether to use sticky header
     columnColorFormatters,
     allowRearrangeColumns = false,
-    tickText = "yes",
-    useTick = true,
     onContextMenu,
   } = props;
   const timestampFormatter = useCallback(

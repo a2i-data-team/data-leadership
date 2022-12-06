@@ -24,7 +24,7 @@ import { useTableColumns } from '.';
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type JsonObject = { [member: string]: any };
 
-const asciiChars = [];
+const asciiChars: any[] = [];
 for (let i = 32; i < 127; i += 1) {
   asciiChars.push(String.fromCharCode(i));
 }
