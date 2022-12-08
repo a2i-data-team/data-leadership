@@ -160,7 +160,7 @@ export const countries = {
 };
 
 // country name used in dataset
-let country_name_aliases = {
+const country_name_aliases = {
   "italy_regions": "Italy (regions)",
   "bd_admin1": "BD Division",
   "bd_admin2": "BD District",
