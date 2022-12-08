@@ -92,6 +92,7 @@ export const countries = {
   bd_admin2,
   bd_admin3,
   bd_admin4,
+  bd_constituency,
   austria,
   australia,
   belgium,
