@@ -81,8 +81,17 @@ import uruguay from './countries/uruguay.geojson';
 import usa from './countries/usa.geojson';
 import zambia from './countries/zambia.geojson';
 import vietnam from './countries/vietnam.geojson';
+import bd_admin1 from './countries/bgd_adm1.geojson';
+import bd_admin2 from './countries/bgd_adm2.geojson';
+import bd_admin3 from './countries/bgd_adm3.geojson';
+import bd_admin4 from './countries/bgd_adm4.geojson';
+import bd_constituency from './countries/bgd_constituency.geojson';
 
 export const countries = {
+  bd_admin1,
+  bd_admin2,
+  bd_admin3,
+  bd_admin4,
   austria,
   australia,
   belgium,
@@ -149,12 +158,23 @@ export const countries = {
   vietnam,
 };
 
+// country name used in dataset
+let country_name_aliases = {
+  "italy_regions": "Italy (regions)",
+  "bd_admin1": "BD Division",
+  "bd_admin2": "BD District",
+  "bd_admin3": "BD Upazila",
+  "bd_admin4": "BD Union",
+  "bd_constituency": "BD Constituency",
+}
+
+
 export const countryOptions = Object.keys(countries).map(x => {
+  if (country_name_aliases.hasOwnProperty(x)) {
+    return [x, country_name_aliases[x]];
+  }
   if (x === 'uk' || x === 'usa') {
     return [x, x.toUpperCase()];
-  }
-  if (x === 'italy_regions') {
-    return [x, 'Italy (regions)'];
   }
   return [x, x[0].toUpperCase() + x.slice(1)];
 });
