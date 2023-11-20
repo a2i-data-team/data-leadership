@@ -111,6 +111,9 @@ SQLLAB_CTAS_NO_LIMIT = True
 
 SECRET_KEY="BPUqFEnUECBI6t4PVsQakIUSTNIG/Ri/iHdIGsBYvsfEKXFI5wT3hcGP"
 
+# Enable public access to certain features
+PUBLIC_ROLE_LIKE_GAMMA = True
+
 
 #
 # Optionally import superset_config_docker.py (which will have been included on
