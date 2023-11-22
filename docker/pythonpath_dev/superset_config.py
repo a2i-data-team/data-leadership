@@ -111,8 +111,7 @@ SQLLAB_CTAS_NO_LIMIT = True
 
 SECRET_KEY="BPUqFEnUECBI6t4PVsQakIUSTNIG/Ri/iHdIGsBYvsfEKXFI5wT3hcGP"
 
-# Enable public access to certain features
-PUBLIC_ROLE_LIKE_GAMMA = True
+
 
 # Set session timeout to 1 day
 PERMANENT_SESSION_LIFETIME = timedelta(days=2)
