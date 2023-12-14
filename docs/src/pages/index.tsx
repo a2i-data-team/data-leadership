@@ -334,13 +334,13 @@ export default function Home(): JSX.Element {
                 </GitHubButton>
               </span> */}
             </div>
-            <div>
+            {/* <div>
               <Link to="/docs/intro">
                 <Button type="primary">
                   Get Started - Apache Superset
                 </Button>
               </Link>
-            </div>
+            </div> */}
         </StyledTitleContainer>
 
         <StyledFeatures>
