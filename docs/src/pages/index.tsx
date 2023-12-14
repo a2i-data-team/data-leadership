@@ -295,23 +295,25 @@ export default function Home(): JSX.Element {
     >
       <StyledMain>
         <StyledTitleContainer>
-            <img className="logo-horiz" src="img/superset-logo-horiz-apache.svg" alt="logo-horiz" />
+            {/* <img className="logo-horiz" src="img/superset-logo-horiz-apache.svg" alt="logo-horiz" /> */}
             <div className="info-text">
-              Apache Superset is a modern data exploration and visualization
-              platform
+              {/* Apache Superset is a modern data exploration and visualization
+              platform */}
+              Data Leadership
             </div>
             <div className="github-section">
               <span className="github-button">
                 <GitHubButton
-                  href="https://github.com/apache/superset"
+                  // href="https://github.com/apache/superset"
+                  href="https://github.com/a2i-data-team/data-leadership"
                   data-size="large"
-                  data-show-count="true"
-                  aria-label="Star apache/superset on GitHub"
+                  // data-show-count="true"
+                  // aria-label="Star apache/superset on GitHub"
                 >
-                  Star
+                  Github -Data Leadership
                 </GitHubButton>
               </span>
-              <span className="github-button">
+              {/* <span className="github-button">
                 <GitHubButton
                   href="https://github.com/apache/superset/subscription"
                   data-size="large"
@@ -330,20 +332,20 @@ export default function Home(): JSX.Element {
                 >
                   Fork
                 </GitHubButton>
-              </span>
+              </span> */}
             </div>
             <div>
               <Link to="/docs/intro">
                 <Button type="primary">
-                  Get Started
+                  Get Started - Apache Superset
                 </Button>
               </Link>
             </div>
         </StyledTitleContainer>
 
         <StyledFeatures>
-            <StyledHeading>Overview</StyledHeading>
-            <div className="info-text info-text-smaller">
+            {/* <StyledHeading>Data Leadership Overview</StyledHeading> */}
+            {/* <div className="info-text info-text-smaller">
               Superset is fast, lightweight, intuitive, and loaded with options
               that make it easy for users of all skill sets to explore and
               visualize their data, from simple line charts to highly detailed
@@ -399,10 +401,71 @@ export default function Home(): JSX.Element {
                   />
                 </Col>
               </Row>
-            </ul>
+            </ul> */}
+        </StyledFeatures>
+        
+        <StyledFeatures>
+            {/* <StyledHeading>Superset Overview</StyledHeading> */}
+            {/* <div className="info-text info-text-smaller">
+              Superset is fast, lightweight, intuitive, and loaded with options
+              that make it easy for users of all skill sets to explore and
+              visualize their data, from simple line charts to highly detailed
+              geospatial charts.
+            </div>
+            <ul className="featureList ant-row">
+              <Row>
+                <Col sm={24} md={12}>
+                  <Feature
+                    icon={<FireOutlined className="warning-color" />}
+                    title="Powerful yet easy to use"
+                    descr={`
+                    Quickly and easily integrate and explore your data, using
+                    either our simple no-code viz builder or state of the art SQL
+                    IDE.
+                  `}
+                  />
+                </Col>
+
+                <Col sm={24} md={12}>
+                  <Feature
+                    icon={<DatabaseOutlined className="info-color" />}
+                    title="Integrates with modern databases"
+                    descr={`
+                    Superset can connect to any SQL based datasource
+                    through SQLAlchemy, including modern cloud native databases
+                    and engines at petabyte scale.
+                  `}
+                  />
+                </Col>
+              </Row>
+              <Row>
+                <Col sm={24} md={12}>
+                  <Feature
+                    icon={<DeploymentUnitOutlined className="success-color" />}
+                    title="Modern architecture"
+                    descr={`
+                    Superset is lightweight and highly scalable, leveraging the
+                    power of your existing data infrastructure without requiring
+                    yet another ingestion layer.
+                  `}
+                  />
+                </Col>
+                <Col sm={24} md={12}>
+                  <Feature
+                    icon={<DotChartOutlined className="alert-color" />}
+                    title="Rich visualizations and dashboards"
+                    descr={`
+                    Superset ships with a wide array of beautiful visualizations.
+                    Our visualization plug-in architecture makes it easy to build
+                    custom visualizations that drop directly into Superset.
+                  `}
+                  />
+                </Col>
+              </Row>
+            </ul> */}
         </StyledFeatures>
 
-        <CarouselSection>
+        {/* <CarouselSection>
             <StyledHeading>Explore</StyledHeading>
             <div className="toggleContainer">
               <div className="toggleBtns">
@@ -469,14 +532,14 @@ export default function Home(): JSX.Element {
                 </a>
               </span>
             </StyledIntegrations>
-        </CarouselSection>
+        </CarouselSection> */}
       </StyledMain>
-      <StyledCredits>
+      {/* <StyledCredits>
         We use{' '}
         <a href="https://applitools.com/" target="_blank" rel="nofollow">
           <img src="img/applitools.png" title="Applitools" />
         </a>
-      </StyledCredits>
+      </StyledCredits> */}
     </Layout>
   );
 }
