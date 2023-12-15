@@ -177,12 +177,12 @@ const config = {
       navbar: {
         logo: {
           alt: 'Superset Logo',
-          src: 'img/superset-logo-horiz.svg',
-          srcDark: 'img/superset-logo-horiz-dark.svg',
+          src: 'img/data-leadership-logo.png',
+          srcDark: 'img/data-leadership-logo.png',
         },
         items: [
           {
-            label: 'Documentation',
+            label: 'Superset Documentation',
             items: [
               {
                 label: 'Getting Started',
@@ -197,54 +197,87 @@ const config = {
                 to: '/docs/frequently-asked-questions',
               },
             ],
-          },
-          {
-            label: 'Community',
+          },{
+            label: 'Data Leadership',
             items: [
               {
-                label: 'Resources',
-                href: '/community',
+                label: 'Publication',
+                to: 'https://a2i.gov.bd/a2i-publications/data-leadership/',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/apache/superset',
+                label: 'News',
+                to: 'https://www.risingbd.com/english/science-technology/news/95570',
               },
               {
-                label: 'Slack',
-                href: 'https://join.slack.com/t/apache-superset/shared_invite/zt-16jvzmoi8-sI7jKWp~xc2zYRe~NqiY9Q',
+                label: 'Data-driven Policy',
+                to: 'https://a2i.gov.bd/a2i-missions/data-driven-policy-making/#',
               },
-              {
-                label: 'Mailing List',
-                href: 'https://lists.apache.org/list.html?dev@superset.apache.org',
-              },
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/superset+apache-superset',
-              },
+              
+              // {
+              //   label: 'Tutorial',
+              //   to: '/docs/intro',
+              // },
+              // {
+              //   label: 'FAQ',
+              //   to: '/docs/frequently-asked-questions',
+              // },
             ],
           },
+          // {
+          //   label: 'Community',
+          //   items: [
+          //     {
+          //       label: 'Resources',
+          //       href: '/community',
+          //     },
+          //     {
+          //       label: 'GitHub',
+          //       href: 'https://github.com/apache/superset',
+          //     },
+          //     {
+          //       label: 'Slack',
+          //       href: 'https://join.slack.com/t/apache-superset/shared_invite/zt-16jvzmoi8-sI7jKWp~xc2zYRe~NqiY9Q',
+          //     },
+          //     {
+          //       label: 'Mailing List',
+          //       href: 'https://lists.apache.org/list.html?dev@superset.apache.org',
+          //     },
+          //     {
+          //       label: 'Stack Overflow',
+          //       href: 'https://stackoverflow.com/questions/tagged/superset+apache-superset',
+          //     },
+          //   ],
+          // },
           {
-            href: 'https://github.com/apache/superset',
+            href: 'https://github.com/a2i-data-team/data-leadership',
             position: 'right',
             class: 'github-logo-container',
           },
         ],
       },
+      // footer: {
+      //   style: 'dark',
+      //   links: [],
+      //   copyright: `Copyright © ${new Date().getFullYear()},
+      //   The <a href="https://www.apache.org/" target="_blank" rel="noreferrer">Apache Software Foundation</a>,
+      //   Licensed under the Apache <a href="https://apache.org/licenses/LICENSE-2.0" target="_blank" rel="noreferrer">License</a>. <br/>
+      //   <small>Apache Superset, Apache, Superset, the Superset logo, and the Apache feather logo are either registered trademarks or trademarks of The Apache Software Foundation. All other products or name brands are trademarks of their respective holders, including The Apache Software Foundation.
+      //   <a href="https://www.apache.org/" target="_blank">Apache Software Foundation</a> resources</small><br />
+      //   <small>
+      //   <a href="https://www.apache.org/security/" target="_blank" rel="noreferrer">Security</a>&nbsp;|&nbsp;
+      //   <a href="https://www.apache.org/foundation/sponsorship.html" target="_blank" rel="noreferrer">Donate</a>&nbsp;|&nbsp;
+      //   <a href="https://www.apache.org/foundation/thanks.html" target="_blank" rel="noreferrer">Thanks</a>&nbsp;|&nbsp;
+      //   <a href="https://apache.org/events/current-event" target="_blank" rel="noreferrer">Events</a>&nbsp;|&nbsp;
+      //   <a href="https://apache.org/licenses/" target="_blank" rel="noreferrer">License</a>
+      //   </small>`,
+      // },
       footer: {
         style: 'dark',
         links: [],
         copyright: `Copyright © ${new Date().getFullYear()},
-        The <a href="https://www.apache.org/" target="_blank" rel="noreferrer">Apache Software Foundation</a>,
-        Licensed under the Apache <a href="https://apache.org/licenses/LICENSE-2.0" target="_blank" rel="noreferrer">License</a>. <br/>
-        <small>Apache Superset, Apache, Superset, the Superset logo, and the Apache feather logo are either registered trademarks or trademarks of The Apache Software Foundation. All other products or name brands are trademarks of their respective holders, including The Apache Software Foundation.
-        <a href="https://www.apache.org/" target="_blank">Apache Software Foundation</a> resources</small><br />
-        <small>
-        <a href="https://www.apache.org/security/" target="_blank" rel="noreferrer">Security</a>&nbsp;|&nbsp;
-        <a href="https://www.apache.org/foundation/sponsorship.html" target="_blank" rel="noreferrer">Donate</a>&nbsp;|&nbsp;
-        <a href="https://www.apache.org/foundation/thanks.html" target="_blank" rel="noreferrer">Thanks</a>&nbsp;|&nbsp;
-        <a href="https://apache.org/events/current-event" target="_blank" rel="noreferrer">Events</a>&nbsp;|&nbsp;
-        <a href="https://apache.org/licenses/" target="_blank" rel="noreferrer">License</a>
-        </small>`,
+        © <a href="https://www.apache.org/" target="_blank" rel="noreferrer">Apache</a>,
+        
+        © <a href="https://docs-dataleadership.sdg.gov.bd/" target="_blank" rel="noreferrer">a2i</a>`,
       },
       prism: {
         theme: lightCodeTheme,

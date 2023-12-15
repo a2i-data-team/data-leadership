@@ -34,6 +34,12 @@ import {
 import GitHubButton from 'react-github-btn';
 import { mq } from '../utils';
 import { Databases } from '../resources/data';
+import ReactPlayer from 'react-player';
+
+const VideoPreview = ({ videoId }) => {
+  const videoUrl = `https://drive.google.com/file/d/1DqpFmb7IQQiDAvKnA88IdttbQVfGSoFU/view?usp=drive_link`;
+
+};
 
 const { colors } = supersetTheme;
 
@@ -295,13 +301,13 @@ export default function Home(): JSX.Element {
     >
       <StyledMain>
         <StyledTitleContainer>
-            {/* <img className="logo-horiz" src="img/superset-logo-horiz-apache.svg" alt="logo-horiz" /> */}
-            <div className="info-text">
+            <img className="logo-horiz" src="img/a2i-Logo-set.png" alt="logo-horiz" />
+            {/* <div className="info-text"> */}
               {/* Apache Superset is a modern data exploration and visualization
               platform */}
               Data Leadership
-            </div>
-            <div className="github-section">
+            {/* </div> */}
+            {/* <div className="github-section">
               <span className="github-button">
                 <GitHubButton
                   // href="https://github.com/apache/superset"
@@ -312,7 +318,7 @@ export default function Home(): JSX.Element {
                 >
                   Github -Data Leadership
                 </GitHubButton>
-              </span>
+              </span> */}
               {/* <span className="github-button">
                 <GitHubButton
                   href="https://github.com/apache/superset/subscription"
@@ -333,29 +339,50 @@ export default function Home(): JSX.Element {
                   Fork
                 </GitHubButton>
               </span> */}
-            </div>
-            {/* <div>
-              <Link to="/docs/intro">
-                <Button type="primary">
-                  Get Started - Apache Superset
-                </Button>
-              </Link>
-            </div> */}
+            {/* </div> */}
+            
         </StyledTitleContainer>
 
         <StyledFeatures>
-            {/* <StyledHeading>Data Leadership Overview</StyledHeading> */}
-            {/* <div className="info-text info-text-smaller">
-              Superset is fast, lightweight, intuitive, and loaded with options
-              that make it easy for users of all skill sets to explore and
-              visualize their data, from simple line charts to highly detailed
-              geospatial charts.
-            </div>
-            <ul className="featureList ant-row">
+            <StyledHeading>Data Leadership Overview</StyledHeading>
+            
+            <div className="info-text info-text-smaller">
+            Aspire to Innovate (a2i) has launched “Data Leadership” initiative under the supervision of the Cabinet Division and the Information & Communication Technology (ICT) Division, Bangladesh. The approach was a holistic one, ensuring inclusion across the whole of government.  
+
+              {/* <Link to="https://drive.google.com/file/d/1DqpFmb7IQQiDAvKnA88IdttbQVfGSoFU/view?usp=drive_link">
+                <Button type="primary">
+                  DL Journey
+                </Button>
+              </Link> */}
+            </div> 
+
+            <iframe
+            title="Data Leadership Journey"
+            width="560"
+            height="315"
+            src="https://drive.google.com/file/d/1DqpFmb7IQQiDAvKnA88IdttbQVfGSoFU/preview"
+            frameBorder="0"
+            allowFullScreen={true}
+          />
+            {/* <br />
+            <span className="github-button">
+                <GitHubButton
+                  // href="https://github.com/apache/superset"
+                  href="https://github.com/a2i-data-team/data-leadership"
+                  data-size="large"
+                  // data-show-count="true"
+                  // aria-label="Star apache/superset on GitHub"
+                >
+                  Github -Data Leadership
+                </GitHubButton>
+              </span> */}
+
+            {/* <ul className="featureList ant-row">
               <Row>
                 <Col sm={24} md={12}>
                   <Feature
                     icon={<FireOutlined className="warning-color" />}
+                    
                     title="Powerful yet easy to use"
                     descr={`
                     Quickly and easily integrate and explore your data, using
@@ -402,6 +429,7 @@ export default function Home(): JSX.Element {
                 </Col>
               </Row>
             </ul> */}
+            
         </StyledFeatures>
         
         <StyledFeatures>
