@@ -347,7 +347,9 @@ export default function Home(): JSX.Element {
             <StyledHeading>Data Leadership Overview</StyledHeading>
             
             <div className="info-text info-text-smaller">
-            Aspire to Innovate (a2i) has launched “Data Leadership” initiative under the supervision of the Cabinet Division and the Information & Communication Technology (ICT) Division, Bangladesh. The approach was a holistic one, ensuring inclusion across the whole of government.  
+            Aspire to Innovate (a2i) has launched “Data Leadership” initiative under the 
+            supervision of the Cabinet Division and the Information & Communication Technology (ICT) Division, 
+            Bangladesh. The approach was a holistic one, ensuring inclusion across the whole of government.  
 
               {/* <Link to="https://drive.google.com/file/d/1DqpFmb7IQQiDAvKnA88IdttbQVfGSoFU/view?usp=drive_link">
                 <Button type="primary">

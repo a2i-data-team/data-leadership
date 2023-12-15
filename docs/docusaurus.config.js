@@ -212,6 +212,10 @@ const config = {
                 label: 'Data-driven Policy',
                 to: 'https://a2i.gov.bd/a2i-missions/data-driven-policy-making/#',
               },
+              {
+                label: 'Case Study',
+                to: 'https://docs.google.com/presentation/d/1faxFWshxL3CEBecUjVYMj19ksiB9OmbR/edit?usp=sharing&ouid=101226346120478135252&rtpof=true&sd=true',
+              },
               
               // {
               //   label: 'Tutorial',
