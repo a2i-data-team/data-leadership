@@ -115,7 +115,7 @@ SECRET_KEY="BPUqFEnUECBI6t4PVsQakIUSTNIG/Ri/iHdIGsBYvsfEKXFI5wT3hcGP"
 PUBLIC_ROLE_LIKE_GAMMA = True
 
 # Set session timeout to 1 day
-PERMANENT_SESSION_LIFETIME = timedelta(days=2)
+# PERMANENT_SESSION_LIFETIME = timedelta(days=2)
 
 #
 # Optionally import superset_config_docker.py (which will have been included on
