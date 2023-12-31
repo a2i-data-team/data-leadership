@@ -109,13 +109,14 @@ WEBDRIVER_BASEURL_USER_FRIENDLY = WEBDRIVER_BASEURL
 
 SQLLAB_CTAS_NO_LIMIT = True
 
-SECRET_KEY="BPUqFEnUECBI6t4PVsQakIUSTNIG/Ri/iHdIGsBYvsfEKXFI5wT3hcGP"
+# SECRET_KEY="BPUqFEnUECBI6t4PVsQakIUSTNIG/Ri/iHdIGsBYvsfEKXFI5wT3hcGP"
 
 # Enable public access to certain features
-# PUBLIC_ROLE_LIKE_GAMMA = False
+PUBLIC_ROLE_LIKE_GAMMA = False
 
 # Set session timeout to 1 day
 # PERMANENT_SESSION_LIFETIME = timedelta(days=2)
+PERMANENT_SESSION_LIFETIME = timedelta(minutes=5)
 
 #
 # Optionally import superset_config_docker.py (which will have been included on
