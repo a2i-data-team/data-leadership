@@ -18,6 +18,6 @@
 # Ignore everything
 *
 # DON'T ignore the .gitignore
-!.gitignore
-!superset_config.py
+.gitignore
+superset_config.py
 !superset_config_local.example
