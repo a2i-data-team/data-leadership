@@ -344,7 +344,7 @@ export default function Home(): JSX.Element {
         </StyledTitleContainer>
 
         <StyledFeatures>
-            <StyledHeading>Data Leadership Overview</StyledHeading>
+            <StyledHeading>Data Leadership Overview.</StyledHeading>
             
             <div className="info-text info-text-smaller">
             Aspire to Innovate (a2i) has launched “Data Leadership” initiative under the 
