@@ -114,7 +114,7 @@ SECRET_KEY="BPUqFEnUECBI6t4PVsQakIUSTNIG/Ri/iHdIGsBYvsfEKXFI5wT3hcGP"
 SESSION_COOKIE_SECURE = False
 SESSION_COOKIE_SAMESITE = 'None'
 # Enable public access to certain features
-PUBLIC_ROLE_LIKE_GAMMA = False
+PUBLIC_ROLE_LIKE_GAMMA = True
 
 # Set session timeout to 1 day
 # PERMANENT_SESSION_LIFETIME = timedelta(days=2)
